@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Adrian Hu APW Updates</h1>
+ 
+
+<p>Update 1 as of 10/31/24: I did extensive research regarding programming a Discord bot to search and present plays of Baseball. Unfortunately, it is pretty difficult to find direct access to the MLB Statcast API as it is licensed, but I managed to find a JSON feed that BaseballSavant uses to track live games. By inputting the URL and then changing the game ID with the desired number, you can find a very large JSON file of every single pitch tracked with advanced stats on the mall movement and the play ID. The play ID is very crucial, as I plan on using that to source all other descriptions of a desired play. For the discord bot, it is currently set up and running on VSCode on my PC at home, but isn't programmed for any command/response yet. This is because I accidentally set up the bot with the discord.js modules without realizing that the way I planned to use applications for the final responses on Python and NOT javascript. I had to change the entire program to fit the discord.py modules (which actually turned out to be easier to set up, thankfully).
+ 
+In the future, I plan to use a process similar to that of Mr. Golanka used for the Intermediate Communications project, using the urllib3 pool manager module to potentially get the website feed that stores the JSON feeds. With that, I can tinker to get a proper output from the discord bot. I also realize that Discord has new features for beautifying bot responses, so if I have time for that at some point I may modify it so it looks cleaner to the consumer.</p>
+
+</body>
+</html>
+
